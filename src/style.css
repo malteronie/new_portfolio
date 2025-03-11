@@ -1,0 +1,130 @@
+/* Style général */
+body {
+    background: url("../img/fond_simple.avif");
+    z-index:  1;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Empêche le scroll */
+}
+canvas {
+    position: fixed; /* Fixe le canvas pour qu'il reste en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Met le canvas derrière tout */
+    pointer-events: none; /* Permet de cliquer à travers le canvas */
+}
+/* Barre de navigation */
+nav {
+    background-image: url("../img/fondecrans.jfif");
+    z-index: 1000; /* S'assurer qu'elle passe au-dessus */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(120, 151, 135, 0.8);
+    padding: 10px;
+}
+
+/* Profil */
+nav .profile {
+    display: flex;
+    align-items: center;
+}
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+nav .profile h1 {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Liste des liens */
+ul {
+    display: block; /* Assure que la liste prend toute la largeur */
+    padding-left: 20px; /* Ajoute une indentation pour un meilleur rendu */
+}
+
+li {
+    display: list-item; /* Corrige le comportement flex si appliqué */
+    margin-bottom: 5px; /* Ajoute un petit espace entre les éléments */
+    list-style: none;
+}
+li:hover {
+    border-bottom-color: black;
+}
+
+/* Style des boutons */
+.bouton {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.bouton:hover {
+    color: #ccc;
+    border-bottom-color: black;
+}
+.bouton a {
+    text-decoration: none;
+    color: white;
+}
+.bouton a:hover {
+    color: #ADD8E6;
+}
+
+/* Sections */
+section {
+    margin: 4%;
+}
+
+/* Header */
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #ADD8E6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+header h3 {
+    color: #8DA7A9;
+}
+header div {
+    color: white;
+    font-size: 20px;
+    line-height: 150%;
+}
+header div p {
+    color: #D3D3D3;
+    text-shadow: 1px 1px 2px blue, 0px 0px 2px white, 0px 0px 2px green;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+    li {
+        margin: 10px 0;
+    }
+}
