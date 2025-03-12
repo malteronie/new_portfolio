@@ -1,6 +1,6 @@
 /* Style général */
 body {
-    background: url("public/img/fond_simple.avif");
+    background: url("../public/img/fond_simple.avif");
     z-index:  1;
     text-align: center;
     background-size: cover;
@@ -25,7 +25,7 @@ canvas {
 }
 /* Barre de navigation */
 nav {
-    background-image: url("public/img/fondecrans.jfif");
+    background-image: url("img/fondecrans.jfif");
     z-index: 1000; /* S'assurer qu'elle passe au-dessus */
     color: white;
     display: flex;
