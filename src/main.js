@@ -12,7 +12,7 @@ const count = 300;
 const distance = 2;
 const size = 0.2
 const textureLoader = new TextureLoader()
-const circleTexture = textureLoader.load("../click.png")
+const circleTexture = textureLoader.load("click.png")
 // scene.add(new AxesHelper()) // Voir les axes
 
 const camera = new PerspectiveCamera(30, window.innerWidth/window.innerHeight, 0.01, 1000); //creer la camera visuelle 1(zoom cam) 2(ratio de l'image) 3 et 4(afficher entre ... et ...)

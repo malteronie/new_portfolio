@@ -1,6 +1,6 @@
 /* Style général */
 body {
-    background: url("../public/img/fond_simple.avif");
+    background: url("img/fond_simple.avif");
     z-index:  1;
     text-align: center;
     background-size: cover;
