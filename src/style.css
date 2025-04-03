@@ -12,7 +12,7 @@ body {
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Empêche le scroll */
+    overflow: auto; /* Permet le défilement */
 }
 canvas {
     position: fixed; /* Fixe le canvas pour qu'il reste en arrière-plan */
@@ -25,7 +25,7 @@ canvas {
 }
 /* Barre de navigation */
 nav {
-    background-image: url("img/fondecrans.jfif");
+    
     z-index: 1000; /* S'assurer qu'elle passe au-dessus */
     color: white;
     display: flex;
@@ -34,10 +34,17 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: rgba(120, 151, 135, 0.8);
+    background-color: rgba(29, 31, 30, 0.8);
     padding: 10px;
 }
-
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.test li{
+    margin-right: 12px;
+}
 /* Profil */
 nav .profile {
     display: flex;
@@ -100,7 +107,6 @@ header h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     color: #ADD8E6;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 header h3 {
     color: #8DA7A9;
@@ -112,7 +118,6 @@ header div {
 }
 header div p {
     color: #D3D3D3;
-    text-shadow: 1px 1px 2px blue, 0px 0px 2px white, 0px 0px 2px green;
 }
 
 /* Adaptation mobile */
@@ -127,4 +132,18 @@ header div p {
     li {
         margin: 10px 0;
     }
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    background: url('../public/img/fond.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Espacement sous l'image pour voir le texte en scrollant */
+.content {
+    padding: 50px 20px;
 }
