@@ -188,7 +188,7 @@ ul li {
     margin: 10px 0;
 }
 
-<!-- .btn-three {
+.btn-three {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
@@ -276,4 +276,4 @@ ul li {
   .btn-one:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
-  } -->
+  }
