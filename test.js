@@ -1,7 +1,6 @@
 const htmlP = document.getElementById("pop");
 const txt = htmlP.dataset.label;
 let i 	= 0 ;
-let u = 0;
 
 function showLetters()
 {
