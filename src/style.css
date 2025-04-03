@@ -1,14 +1,35 @@
+
+
 /* Style général */
 body {
-    background: url("../public/img/fond_simple.avif");
-    z-index:  1;
     text-align: center;
+    background-position: center;
+    width: 100%;
+    background-color: black;
+    color:white
+}
+
+.first{
+    background: url("../public/img/fondd.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index:  1;
+    color: black;
     background-attachment: fixed;
-    background-position: center;
-    color: white;
+    text-align: center;
+    padding-top: 25%;
 }
+
+.first h1{
+    font-size: 60px;
+}
+
+.first h3{
+    text-decoration: underline;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -34,7 +55,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: rgba(29, 31, 30, 0.8);
+    background-color: rgba(29, 31, 30);
     padding: 10px;
 }
 .test{
@@ -102,22 +123,9 @@ section {
     margin: 4%;
 }
 
-/* Header */
-header h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    color: #ADD8E6;
-}
-header h3 {
-    color: #8DA7A9;
-}
 header div {
-    color: white;
     font-size: 20px;
     line-height: 150%;
-}
-header div p {
-    color: #D3D3D3;
 }
 
 /* Adaptation mobile */
@@ -146,4 +154,36 @@ header div p {
 /* Espacement sous l'image pour voir le texte en scrollant */
 .content {
     padding: 50px 20px;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.option {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.option img {
+    width: 100px;
+}
+
+.competences, .debouches {
+    padding: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
 }
